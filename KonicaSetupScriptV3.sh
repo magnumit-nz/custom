@@ -1,6 +1,6 @@
 #!/bin/sh
 # Add Printer and set options
-# For use on Student macOS machines
+# For use on macOS machines
 
 for printer in `lpstat -a | awk '{print $1}'`
 do
