@@ -1,0 +1,13 @@
+##########
+### This powershell script connects to Jumpcloud via your API key, consults a CSV file full of usernames and runs through the list line by line removing unwanted users using the Remove-JCUser cmdlet.
+##########
+
+$JumpCloudApiKey = 'YOUR_API_KEY'
+
+Connect-JCOnline -JumpCloudAPIKey $JumpCloudAPIKey -force
+
+$users = ForEach ($user in $(Get-Content /PATH/TO/csv.csv)) {
+
+    Remove-JCUser -Username $user
+
+}
