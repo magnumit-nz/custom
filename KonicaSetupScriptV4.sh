@@ -14,4 +14,4 @@ sleep 3
 echo adding the followme printer with grayscale defaults
 
 #Add new printer with grayscale defaults
-lpadmin -p "followme" -v ipp://202.37.114.158/printers/followme -D "Followme" -L "Follow me Printer" -P "/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTAC658.gz" -o SelectColor=Grayscale -o ColorModel=Gray -o KMDuplex=Single -o finisher=FS537SDJS_ZeusSZ -E
+lpadmin -p "followme" -v ipp://_YOUR_PRINT_SERVER_/printers/followme -D "Followme" -L "Follow me Printer" -P "/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTAC658.gz" -o SelectColor=Grayscale -o ColorModel=Gray -o KMDuplex=Single -o finisher=FS537SDJS_ZeusSZ -E
