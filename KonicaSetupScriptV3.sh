@@ -10,4 +10,4 @@ done
 
 sleep 3
 
-lpadmin -p "followme" -v ipp://papercut.christscollege.com/printers/followme -D "Followme" -L "Follow me Printer" -P "/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTAC658.gz" -o SelectColor=Grayscale -o KMDuplex=Single -o finisher=FS537SDJS_ZeusSZ -E
+lpadmin -p "followme" -v ipp://YOUR-PRINT-SERVER/printers/followme -D "Followme" -L "Follow me Printer" -P "/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTAC658.gz" -o SelectColor=Grayscale -o KMDuplex=Single -o finisher=FS537SDJS_ZeusSZ -E
